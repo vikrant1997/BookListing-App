@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffcdd2"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#263238"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="@string/Title" />
+
+        <ImageView
+            android:id="@+id/BookImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BookImage"
+            android:gravity="center"
+            android:text="@string/author"
+
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#263238"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author_name"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#263238"
+            android:textSize="15sp"
+            tools:text="@string/author" />
+
+        <TextView
+            android:id="@+id/publisher_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author"
+            android:gravity="center"
+            android:text="@string/publisher_name"
+
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#263238"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/publisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/publisher_name"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#263238"
+            android:textSize="17sp"
+            tools:text="Publisher" />
+
+        <ProgressBar
+            android:id="@+id/loading_indicator2"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</FrameLayout>
